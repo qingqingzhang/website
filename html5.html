@@ -1,134 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-/* Create two columns/boxes that floats next to each other */
-#nav1{
-  float: left;
-  width: 100%;
-  height: 100px; /* only for demonstration, should be removed */
-  background: #cc0;
-  padding: 20px;
-}
-
-#ho1 li {
-  float: left;
-/*  padding: 20px; */
-}
-
-#nav2{
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 10;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
+  <title>Jay Karlsven Portfolio</title>
 </head>
+
 <body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#home">
+          Jay Karlsven
+        </a>
+      </div>
 
-<h2>CSS Layout Float</h2>
-<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
-<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
-
-<header>
-  <h2>Cities</h2>
-</header>
-
- <section style="padding:16px;">
- <button style="font-size:20px;margin-left:16px;background-color:#90EE90"><a href="#">London</a></button>
- <button style="font-size:20px;margin-left:16px;background-color:#90EE90""><a href="#">Paris</a></button>
- <button style="font-size:20px;margin-left:16px;background-color:#90EE90"><a href="#">Tokyo</a></button>
- <button style="font-size:20px;margin-left:16px;background-color:#90EE90"><a href="#">Contact</a></button>
- </section>
-
-<section>
- <nav id="nav1">
-    <ul id="ho1">
-      <li style="padding:10px"><a href="#">London</a></li>
-      <li style="padding:10px"><a href="#">Paris</a></li>
-      <li style="padding:10px"><a href="#">Tokyo</a></li>
-      <li style="padding:10px"><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-</section>
-
-<section>
-  <nav id="nav2">
-    <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
-    </ul>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
   </nav>
 
-  <article>
-    <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-  </article>
-</section>
+  <!-- home section -->
+  <a id="home"></a>
+  <section class="home-intro">
+    <div class="container vcenter">
+      <div class="row center-block">
+        <div class="col-xs-12 text-center">
+          <div class="content">
+             <h1>Jay Karlsven</h1>
+            <h2>WEB DEVELOPER</h2>
+            <ul>
+              <li><a href="https://github.com/JayV30" target="_blank"><i class="fa fa-github-square fa-3x fa-fw"></i></a></li>
+              <li><a href="https://twitter.com/JayV30" target="_blank"><i class="fa fa-twitter-square fa-3x fa-fw"></a></i></li>
+              <li><a href="https://codepen.io/JayV30/" target="_blank"><i class="fa fa-codepen fa-3x fa-fw"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <p>Footer</p>
-</footer>
+  <!-- about section -->
+  <a id="about"></a>
+  <section class="about">
+    <div class="container vcenter">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="content">
+            <blockquote>Life isn't about finding yourself. Life is about creating yourself.<small>George Bernard Shaw</small></blockquote>
+            <p>I'm a self-taught web designer and developer currently living in Columbus, OH. In addition to my web dev skills, I have a very diverse background outside of the tech field. In the past I have been a police officer, news traffic producer, camera assistant, photographer, and video editor.</p>
+            <p>I bring an eye for visual and user interaction design to every project. I'm always looking to learn new skills and play with new technologies. I'm available for freelance work remotely or on-site in the Columbus, OH or Washington, DC areas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- portfolio section -->
+  <a id="portfolio"></a>
+  <section class="portfolio">
+    <div class="container">
+      <div class="content">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="text-center">A Selection of my Projects</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="http://makechow.com" target="_blank">
+              <div class="project" style="background-image:url(https://jpk-image-hosting.s3.amazonaws.com/makechow.jpg)">
+                <div class="overlay">
+                  <h4>Make Chow</h4>
+                </div>
+              </div>
+            </a>
+          </div><!-- /.col-sm-3 -->
+          <div class="col-sm-3">
+            <a href="http://makechow.com" target="_blank">
+              <div class="project" style="background-image:url(https://jpk-image-hosting.s3.amazonaws.com/makechow.jpg)">
+                <div class="overlay">
+                  <h4>Make Chow</h4>
+                </div>
+              </div>
+            </a>
+          </div><!-- /.col-sm-3 -->
+          <div class="col-sm-3">
+            <a href="http://makechow.com" target="_blank">
+              <div class="project" style="background-image:url(https://jpk-image-hosting.s3.amazonaws.com/makechow.jpg)">
+                <div class="overlay">
+                  <h4>Make Chow</h4>
+                </div>
+              </div>
+            </a>
+          </div><!-- /.col-sm-3 -->
+          <div class="col-sm-3">
+            <a href="http://makechow.com" target="_blank">
+              <div class="project" style="background-image:url(https://jpk-image-hosting.s3.amazonaws.com/makechow.jpg)">
+                <div class="overlay">
+                  <h4>Make Chow</h4>
+                </div>
+              </div>
+            </a>
+          </div><!-- /.col-sm-3 -->
+          <div class="col-sm-3">
+            <a href="http://makechow.com" target="_blank">
+              <div class="project" style="background-image:url(https://jpk-image-hosting.s3.amazonaws.com/makechow.jpg)">
+                <div class="overlay">
+                  <h4>Make Chow</h4>
+                </div>
+              </div>
+            </a>
+          </div><!-- /.col-sm-3 -->
+          <div class="col-sm-3">
+            <a href="http://makechow.com" target="_blank">
+              <div class="project" style="background-image:url(https://jpk-image-hosting.s3.amazonaws.com/makechow.jpg)">
+                <div class="overlay">
+                  <h4>Make Chow</h4>
+                </div>
+              </div>
+            </a>
+          </div><!-- /.col-sm-3 -->
+          <div class="col-sm-3">
+            <a href="http://makechow.com" target="_blank">
+              <div class="project" style="background-image:url(https://jpk-image-hosting.s3.amazonaws.com/makechow.jpg)">
+                <div class="overlay">
+                  <h4>Make Chow</h4>
+                </div>
+              </div>
+            </a>
+          </div><!-- /.col-sm-3 -->
+          <div class="col-sm-3">
+            <a href="http://makechow.com" target="_blank">
+              <div class="project" style="background-image:url(https://jpk-image-hosting.s3.amazonaws.com/makechow.jpg)">
+                <div class="overlay">
+                  <h4>Make Chow</h4>
+                </div>
+              </div>
+            </a>
+          </div><!-- /.col-sm-3 -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact section -->
+  <a id="contact"></a>
+  <section class="contact">
+    <div class="container vcenter">
+      <div class="row center-block">
+        <div class="col-xs-12 text-center">
+          <h2>Want to talk?</h2>
+          <h3><a href="https://jpkarlsven.com/static_pages/contact" target="_blank">Contact me</a></h3>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
-</html>
+
