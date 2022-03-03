@@ -23,9 +23,14 @@ nav a {
   text-decoration: none;
 }
 
-a:link {
+a:link, a:active {
   color: green;
   background-color: transparent;
+}
+
+a:link, a:visited {
+  background-color: transparent;
+  color: blue;
 }
 
 .main-header {
